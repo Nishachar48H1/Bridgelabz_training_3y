@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="08_box_sizing.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Box-Sizing Comparison</h1>
+        <p class="intro">Both boxes have the same declared width, padding, and border, but their total sizes differ.</p>
+
+        <section class="comparison">
+            <article class="box default-box">
+                <h2>content-box</h2>
+                <p>Width controls the content area. Padding and border are added outside the declared width.</p>
+                <strong>Total width: 270px</strong>
+            </article>
+
+            <article class="box border-box">
+                <h2>border-box</h2>
+                <p>Width includes the content, padding, and border, keeping the total width at 220px.</p>
+                <strong>Total width: 220px</strong>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

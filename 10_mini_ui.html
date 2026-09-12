@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini User Interface</title>
+    <link rel="stylesheet" href="10_mini_ui.css">
+</head>
+<body>
+    <header class="site-header">
+        <div>
+            <h1>StudySpace</h1>
+            <p>A small place for planning your next study session.</p>
+        </div>
+        <a href="#">Home</a>
+    </header>
+
+    <main>
+        <section class="main-card">
+            <div class="intro">
+                <div>
+                    <h2>Plan Your Session</h2>
+                    <p>Fill in the details and start when you are ready.</p>
+                </div>
+                <img src="https://picsum.photos/180/140?random=30" alt="Study desk">
+            </div>
+
+            <form>
+                <label for="name">Your Name</label>
+                <input id="name" type="text" placeholder="Enter your name">
+
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option>Computer Networks</option>
+                    <option>Java</option>
+                    <option>Cybersecurity</option>
+                    <option>Database Management</option>
+                </select>
+
+                <label for="time">Study Time</label>
+                <input id="time" type="text" placeholder="Example: 2 hours">
+
+                <div class="form-buttons">
+                    <button type="submit">Start Session</button>
+                    <button type="reset" class="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudySpace &copy; 2026</p>
+    </footer>
+</body>
+</html>

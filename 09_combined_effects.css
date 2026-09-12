@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #172033;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.effects {
+    width: min(900px, 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.effect {
+    min-width: 130px;
+    padding: 15px 22px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.one {
+    background: #2563eb;
+}
+
+.two {
+    background: #16a34a;
+}
+
+.three {
+    background: #9333ea;
+}
+
+.four {
+    background: #ea580c;
+}
+
+.effect:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.one:hover {
+    background: #1d4ed8;
+}
+
+.two:hover {
+    transform: translateY(-7px) scale(1.04);
+    background: #15803d;
+}
+
+.three:hover {
+    transform: rotate(3deg) scale(1.06);
+    background: #7e22ce;
+}
+
+.four:hover {
+    background: #c2410c;
+}
+
+.effect:active {
+    transform: scale(0.96);
+}

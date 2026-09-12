@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="04_selectors.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice</h1>
+        <p>Different selectors working on ordinary HTML elements.</p>
+    </header>
+
+    <main class="content">
+        <section>
+            <h2>Element Selector</h2>
+            <p>Every paragraph gets the element selector style.</p>
+            <p>Another paragraph shows the same rule.</p>
+        </section>
+
+        <section class="card">
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph uses a class selector.</p>
+        </section>
+
+        <section id="special">
+            <h2>ID Selector</h2>
+            <p>This section is styled through its unique ID.</p>
+        </section>
+
+        <section>
+            <h2>Attribute Selector</h2>
+            <a href="https://example.com">Normal link</a>
+            <a href="https://example.com" target="_blank">New tab link</a>
+        </section>
+
+        <section>
+            <h2>Combinators</h2>
+            <div class="combo">
+                <p>Direct child paragraph.</p>
+                <span><p>Descendant paragraph.</p></span>
+                <p>Paragraph after the span.</p>
+                <p>Another paragraph.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Selectors Practice</p>
+    </footer>
+</body>
+</html>
